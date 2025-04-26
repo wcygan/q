@@ -53,6 +53,20 @@ You can then execute your native executable with: `./target/q-1.0.0-SNAPSHOT-run
 
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
 
+## Server Testing
+
+Once the application is running, you can test the `/hello` endpoint using the following `curl` command:
+
+```shell
+curl -X GET http://localhost:8080/hello
+```
+
+This should return the response:
+
+```
+Hello from Quarkus REST
+```
+
 ## Provided Code
 
 ### REST
@@ -60,3 +74,5 @@ If you want to learn more about building native executables, please consult <htt
 Easily start your REST Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+`
