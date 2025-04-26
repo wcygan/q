@@ -17,6 +17,20 @@
         <surefire-plugin.version>3.5.2</surefire-plugin.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <name>Buf Maven Repository</name>
+            <id>buf</id>
+            <url>https://buf.build/gen/maven</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -48,6 +62,26 @@
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>build.buf.gen</groupId>
+            <artifactId>wcygan_qq_grpc_java</artifactId>
+            <version>1.72.0.1.20250426154428.ee73a9bc4afe</version>
+        </dependency>
+        <dependency>
+            <groupId>build.buf.gen</groupId>
+            <artifactId>wcygan_qq_protocolbuffers_java</artifactId>
+            <version>30.2.0.1.20250426154428.ee73a9bc4afe</version>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-grpc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>4.30.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
