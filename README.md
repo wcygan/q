@@ -35,3 +35,9 @@ You should receive a response similar to:
   "message": "Hello Foo Bar"
 }
 ```
+
+Use grpcui like so:
+
+```bash
+grpcui -plaintext 0.0.0.0:900
+```
